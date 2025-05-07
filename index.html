@@ -1,0 +1,73 @@
+<!-- Projekt: Die Möwen - Partei Website (CMS Ready) -->
+<!-- Framework: Astro + Netlify CMS + Tailwind CSS -->
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Die Möwen - Bremerhaven</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-white text-gray-800 font-sans">
+    <!-- Header -->
+    <header class="bg-gray-100 border-b shadow-sm sticky top-0 z-50">
+      <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
+        <img src="/assets/möwe.jpg" alt="Logo Die Möwen" class="h-14 rounded-full border border-gray-300" />
+        <nav class="space-x-4 text-sm">
+          <a href="/" class="hover:underline">Start</a>
+          <a href="/ueber-uns" class="hover:underline">Über uns</a>
+          <a href="/programm" class="hover:underline">Programm</a>
+          <a href="/medien" class="hover:underline">Medien</a>
+          <a href="/blog" class="hover:underline">Blog</a>
+          <a href="/kontakt" class="hover:underline">Kontakt</a>
+          <a href="/impressum" class="hover:underline">Impressum</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 to-white py-20">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl font-bold text-gray-900">Willkommen bei den Möwen Bremerhaven</h1>
+        <p class="mt-4 text-lg text-gray-600">Für eine freundliche, soziale und offene Politik am Meer.</p>
+      </div>
+    </section>
+
+    <!-- Blog-Vorschau -->
+    <section class="max-w-5xl mx-auto px-4 py-10">
+      <h2 class="text-2xl font-semibold mb-6">Neu im Blog</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="border p-4 rounded shadow hover:shadow-md transition">
+          <img src="/blog/bsp1.jpg" alt="Blogbild" class="rounded mb-4">
+          <h3 class="text-xl font-bold">Titel des Beitrags</h3>
+          <p class="text-gray-600 text-sm">01. Mai 2025</p>
+          <p class="mt-2 text-gray-700">Kurzbeschreibung des Blogartikels. Ideal für PDFs, Bilder und Inhalte vom Social Media Team.</p>
+        </article>
+        <article class="border p-4 rounded shadow hover:shadow-md transition">
+          <img src="/blog/bsp2.jpg" alt="Blogbild" class="rounded mb-4">
+          <h3 class="text-xl font-bold">Noch ein Beitrag</h3>
+          <p class="text-gray-600 text-sm">27. April 2025</p>
+          <p class="mt-2 text-gray-700">Ein weiterer kurzer Einblick in einen neuen Blogeintrag. Ideal für Mobilgeräte angepasst.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Kontaktformular -->
+    <section class="max-w-3xl mx-auto px-4 py-16" id="kontakt">
+      <h2 class="text-2xl font-bold mb-6">Kontakt</h2>
+      <form action="https://formspree.io/f/xwkgyyyv" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Dein Name" required class="w-full border px-4 py-2 rounded" />
+        <input type="email" name="email" placeholder="Deine E-Mail" required class="w-full border px-4 py-2 rounded" />
+        <textarea name="nachricht" placeholder="Deine Nachricht" rows="5" required class="w-full border px-4 py-2 rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Absenden</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t mt-10 text-center text-sm py-4">
+      <p>© 2025 Die Möwen Bremerhaven</p>
+      <p><a href="mailto:kontakt@diemöwen.de" class="underline text-blue-600">kontakt@diemöwen.de</a></p>
+    </footer>
+  </body>
+</html>
